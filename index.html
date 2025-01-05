@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Empress, Layan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add the style for balloons flying up */
+        .balloons {
+            position: absolute;
+            bottom: -10%;
+            animation: floatUp 10s ease-in-out infinite;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .balloons.left {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .balloons.right {
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+
+        /* To make the image in between rectangular */
+        .photo img.middle {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* To make the "Me" and "Layan" images circular and bigger */
+        .photo img.circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 20px;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        /* Button to navigate to the pictures section */
+        .navigate-btn {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Section to hold the images */
+        #pictures-section {
+            padding: 50px;
+            background-color: #f0f0f0;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            display: none;
+            /* Initially hide the images */
+        }
+
+        #pictures-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Love Notes Button */
+        .notes-btn {
+            display: block;
+            width: 220px;
+            padding: 15px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .notes-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Love Notes Section */
+        #loveNotes {
+            padding: 20px;
+            background-color: #f7e9e9;
+            display: none;
+            margin-top: 40px;
+        }
+
+        .love-note {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Happy 21st Birthday, My Empress Layan!</h1>
+        <p>Forever yours, my love.</p>
+    </header>
+
+    <section class="decorations">
+        <img src="c:\Users\mohan\Desktop\project b\ballons 2.jpg" alt="Balloons" class="balloons left">
+        <img src="c:\Users\mohan\Desktop\project b\ballons 2.jpg" alt="Balloons" class="balloons right">
+        <img src="c:\Users\mohan\Desktop\project b\pop.jpg" alt="Pop Crackers" class="pop-crackers">
+    </section>
+
+    <section class="flowers">
+        <img src="c:\Users\mohan\Desktop\project b\tulip 1.webp" alt="White Tulip" class="flower-image">
+        <img src="c:\Users\mohan\Desktop\project b\tulip 2.jpg" alt="White Tulip" class="flower-image">
+    </section>
+
+    <section class="photos">
+        <div class="photo">
+            <img src="c:\Users\mohan\Desktop\project b\me heart 1.jpg" alt="Me" class="circle">
+            <p>Here’s me, the lucky guy!</p>
+        </div>
+
+        <div class="photo">
+            <img src="c:\Users\mohan\Desktop\project b\our 1.jpg" alt="Special Image Between Us" class="middle">
+            <p>Here’s our special moment!</p>
+        </div>
+
+        <div class="photo">
+            <img src="c:\Users\mohan\Desktop\me hear 2.jpg" alt="Layan" class="circle">
+            <p>And here’s you, my empress!</p>
+        </div>
+    </section>
+
+    <!-- Button to navigate to the pictures section -->
+    <button class="navigate-btn" onclick="showPictures()">View Photos</button>
+
+    <!-- Section to hold pictures -->
+    <section id="pictures-section">
+        <img src="c:\Users\mohan\Desktop\project b\img 01.jpg" alt="Image 1">
+        <img src="c:\Users\mohan\Desktop\project b\img 02.jpg" alt="Image 2">
+        <img src="c:\Users\mohan\Desktop\project b\img 03.jpg" alt="Image 3">
+        <img src="c:\Users\mohan\Desktop\project b\img 04.jpg" alt="Image 4">
+        <img src="c:\Users\mohan\Desktop\project b\img 05.jpg" alt="Image 5">
+        <img src="c:\Users\mohan\Desktop\project b\img 06.jpg" alt="Image 6">
+        <img src="c:\Users\mohan\Desktop\project b\img 07.jpg" alt="Image 7">
+        <img src="c:\Users\mohan\Desktop\project b\img 08.jpg" alt="Image 8">
+        <img src="c:\Users\mohan\Desktop\project b\img 09.jpg" alt="Image 9">
+        <img src="c:\Users\mohan\Desktop\project b\img 10.jpg" alt="Image 10">
+        <img src="c:\Users\mohan\Desktop\project b\img 11.jpg" alt="Image 11">
+        <img src="c:\Users\mohan\Desktop\project b\img 12.jpg" alt="Image 12">
+        <img src="c:\Users\mohan\Desktop\project b\img 13.jpg" alt="Image 13">
+        <img src="c:\Users\mohan\Desktop\project b\img 14.jpg" alt="Image 14">
+        <img src="c:\Users\mohan\Desktop\project b\img 15.jpg" alt="Image 15">
+    </section>
+
+    <!-- Button to navigate to the Love Notes section -->
+    <button class="notes-btn" onclick="showLoveNotes()">Read Our Love Notes</button>
+
+    <!-- Love Notes Section -->
+    <section id="loveNotes">
+        <div class="love-note">
+            <h3>My Empress Layan,</h3>
+            <p>Today, the universe celebrates the day you were born—the day beauty took its most perfect form.</p>
+            <p>I’ve spent so many days trying to find words that could match your grace, but even now, they fall short.
+                You’re not just a part of this world, Layan; you’re the reason it feels alive.</p>
+            <p>If the stars could speak, they’d sing your name in harmony, for even they bow to the brilliance of your
+                smile. If the moon could write, it would craft poems about your beauty, jealous of the glow you bring to
+                the darkest nights.</p>
+            <p>Layan, today isn’t just your birthday—it’s the anniversary of the moment the world became brighter,
+                softer, and kinder. And for me, it’s the reminder that my prayers have always worked because they gave
+                me YOU.</p>
+            <p>You’re the melody that lingers in my mind and the warmth that rests in my heart. If my love for you could
+                take a form, it would be the sunrise—constant, unwavering, and beautiful in every moment.</p>
+            <p>My Empress, this year and every year, I wish you happiness so vast that even the sky feels small in
+                comparison. I pray for your dreams to soar higher than the clouds, for your laughter to echo endlessly,
+                and for your heart to always find peace, no matter where life takes you.</p>
+            <p>You are my forever, my safe place, and the most extraordinary part of my life. And so, on this special
+                day, I celebrate not just your birthday but the honor of loving you.</p>
+            <p>If you close your eyes tonight and feel the stars dancing, that’s me celebrating you with the heavens.
+            </p>
+            <p>With all my heart and more,<br>Your Knight</p>
+        </div>
+        <div class="love-note">
+            <h3>Layan,</h3>
+            <p>Again today is no ordinary day—it’s the day the universe decided the world was someone so radiant, so
+                kind, and so breathtaking that even the stars would envy her. That someone is you.</p>
+            <p>Your birthday isn’t just a celebration of the years you’ve lived but of the light you’ve brought to every
+                moment, every life, and every heart you’ve touched. It’s a reminder that the world is better, brighter,
+                and more beautiful because you exist.</p>
+            <p>Layan, you are more than just a person to me. You’re my muse, my safe haven, my forever. When I look at
+                you, I see galaxies hidden in your eyes, an entire world within your smile, and a warmth that could melt
+                the coldest heart. I could write libraries of words about you and still fail to capture the essence of
+                your magic.</p>
+            <p>Your voice is the melody that soothes my soul. Your laughter? A symphony that fills the silent corners of
+                my life with joy. And your presence—oh Layan, your presence is like the sunrise after a storm, reminding
+                me that hope and beauty always return.</p>
+            <p>Today, on your birthday, I want to remind you of all the things you are:</p>
+            <ul>
+                <li>You’re a fighter. You’ve faced challenges that would break most, yet you rise, stronger and more
+                    graceful each time.</li>
+                <li>You’re a light. In a world that sometimes feels too dark, you shine so brightly that even the stars
+                    pale in comparison.</li>
+                <li>You’re a gift. Not just to me, but to everyone lucky enough to know you.</li>
+            </ul>
+            <p>My love, if I could, I’d gather the stars and spell your name in the sky. I’d weave the moon’s glow into
+                a crown for you and build you a castle in the clouds. But since I cannot do those things, let me give
+                you what I can—my heart, my loyalty, and my endless love.</p>
+            <p>I pray that this year brings you more joy than you can imagine, more love than your heart can hold, and
+                more blessings than the universe can count. I pray that Allah protects you, guides you, and fills your
+                life with peace and happiness.</p>
+            <p>Layan, I’ll spend every day of my life trying to show you how much you mean to me. I’ll write your name
+                in every poem, whisper it in every prayer, and carve it into the very essence of my soul. You are, and
+                always will be, my everything.</p>
+            <p>So here’s to you my empress, my love. Here’s to the day the world became brighter because you were born.
+                Here’s to celebrating you—not just today but every single day of my life.</p>
+            <p>With all the love I have and more just for my one and only woman my empress Layan</p>
+            <p>And If you ever doubt how much you mean to me, just look at the stars. They’ve been trying to compete
+                with your glow ever since you were born.🤭🤭🤭</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created with ❤️ by Your Love</p>
+    </footer>
+
+    <script>
+        function showPictures() {
+            var picturesSection = document.getElementById("pictures-section");
+            picturesSection.style.display = picturesSection.style.display === "none" || picturesSection.style.display === "" ? "grid" : "none";
+        }
+
+        function showLoveNotes() {
+            var loveNotes = document.getElementById("loveNotes");
+            loveNotes.style.display = loveNotes.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>
