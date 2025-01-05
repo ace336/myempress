@@ -1,0 +1,150 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    /* Light Blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #b2dfdb;
+    /* Light Teal */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #00695c;
+    /* Dark Teal */
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    color: #004d40;
+    /* Darker Teal */
+    font-size: 20px;
+}
+
+/* Decorations Section for Balloons and Pop Crackers */
+.decorations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.balloons,
+.pop-crackers {
+    width: 150px;
+    height: 150px;
+}
+
+/* Flowers Styling */
+.flowers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.flower-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Photos Section */
+.photos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.photo {
+    text-align: center;
+    margin: 10px;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo p {
+    font-size: 16px;
+    color: #00695c;
+    /* Dark Teal */
+}
+
+/* Love Notes Section */
+.love-note {
+    background-color: #f5f5dc;
+    /* Beige */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.love-note h3 {
+    color: #004d40;
+    /* Darker Teal */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.love-note p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Button Styling for Love Notes */
+.option-btn {
+    background-color: #00695c;
+    /* Dark Teal */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px auto;
+    display: block;
+}
+
+.option-btn:hover {
+    background-color: #004d40;
+    /* Darker Teal */
+}
+
+/* Hidden Content */
+.hidden-content {
+    display: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b2dfdb;
+    /* Light Teal */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #00695c;
+    /* Dark Teal */
+    margin: 0;
+    font-size: 16px;
+}
